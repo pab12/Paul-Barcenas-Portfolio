@@ -29,23 +29,97 @@ header nav ul li a {
 /*header style ends*/
 
 .hero {
+
+    display:flex;
+    flex-wrap: wrap;
+    height: 500px;
+    overflow: hidden;
+
+   
     
 }
+/*about me section*/
 .about-me {
     display:flex;
     flex-wrap: wrap;
     justify-content:flex-start;
     max-height: 300px;
+    padding-bottom: 10px;
     
 }
 .about-me h2 {
     font-size:50px;
     border-right: 3px solid;
     border-right-color:blue;
-    padding: 10px 20px 10px 100px;
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 .about-me p {
     padding:10px 10px 10px 10px;
     flex: 12;
     margin-right: 500px;
+}
+/*about me section ends*/
+
+/* work section starts*/
+.work {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    padding-bottom: 10px;
+
+
+}
+.work h2 {
+    font-size:50px;
+    border-right:3px solid;
+    border-right-color:blue;
+    padding-right: 20px;
+    display:flex;
+    justify-content:flex-end;
+    width: 15%;
+}
+/*Work section ends*/
+/*contact section starts*/
+.contact-me {
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom:10px;
+}
+.contact-me h2 {
+    font-size: 50px;
+    border-right: 3px solid;
+    border-right-color: blue;
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+    padding-right:20px;
+    /*flex: 0;*/
+}
+.work-text {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    background-color: lightblue;
+}
+.work-text h3 {
+    font-size: 30px;
+}
+.work-text p {
+    font-size: 25px;
+}
+.run-buddy {
+    position: relative;
+    padding-bottom: 10px;
+}
+.run {
+    position:relative;
+}
+.my-work img {
+    border: lightblue solid 10px;
+}
+.my-work {
+    padding-left: 10px;
 }
