@@ -38,70 +38,69 @@ header nav ul li a {
    
     
 }
-/*about me section*/
-.about-me {
+.page-section {
     display:flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+.page-section>h2 {
+    font-size:50px;
+    border-right: 3px solid;
+    border-right-color:blue;
+    /* display: flex;
+    justify-content: flex-end; */
+    flex: 0 0 25%;
+    padding-right: 20px;
+}
+.page-section> div {
+    flex:0 0 75%;
+}
+/*about me section*/
+.about-me {
     max-height: 300px;
     padding-bottom: 10px;
     
 }
-.about-me h2 {
-    font-size:50px;
-    border-right: 3px solid;
-    border-right-color:blue;
-    width: 15%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-}
+
 .about-me p {
     padding:10px 10px 10px 10px;
-    flex: 12;
-    margin-right: 500px;
+    /* flex: 1; */
 }
 /*about me section ends*/
 
 /* work section starts*/
 .work {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
     padding-bottom: 10px;
+}
 
-
-}
-.work h2 {
-    font-size:50px;
-    border-right:3px solid;
-    border-right-color:blue;
-    padding-right: 20px;
-    display:flex;
-    justify-content:flex-end;
-    width: 15%;
-}
-/*Work section ends*/
-/*contact section starts*/
-.contact-me {
-    display:flex;
-    flex-wrap: wrap;
-    padding-bottom:10px;
-}
-.contact-me h2 {
-    font-size: 50px;
-    border-right: 3px solid;
-    border-right-color: blue;
+.my-work {
+    padding-left: 10px;
     display: flex;
-    justify-content: flex-end;
-    width: 15%;
-    padding-right:20px;
-    /*flex: 0;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
+.project {
+    display:flex;
+    align-items:flex-end;
+    flex-basis:calc(50% - 1em);
+    border: 5px solid blue;
+    min-height: 100px;
+    max-height: 100px;
+    background-size: 100%;
+    margin: 20px;
+    /* position:relative; */
+}
+.run-buddy {
+    min-height: 200px;
+    flex-basis: 100%;
+    background-image: url("../images/run-buddy.png");
+}
+
 .work-text {
-    position: absolute;
     bottom: 100px;
-    left: 10px;
     background-color: lightblue;
 }
 .work-text h3 {
@@ -110,16 +109,39 @@ header nav ul li a {
 .work-text p {
     font-size: 25px;
 }
-.run-buddy {
-    position: relative;
-    padding-bottom: 10px;
+/*Work section ends*/
+/*contact section starts*/
+.contact-me {
+    padding-bottom:10px;
 }
+
 .run {
-    position:relative;
+    background-image: url("../images/Horiseon.png");
 }
-.my-work img {
-    border: lightblue solid 10px;
+
+@media screen and (max-width: 900px) {
+    header {    
+    justify-content: center;
+    }
+    header nav {
+        justify-content: center;
+    }
+    /* .page-section>h2 {
+        flex: 0 0 100%;
+        
+    } */
+    .project {
+        flex: 0 0 100%;
+        flex-basis: 100%;
+    }
 }
-.my-work {
-    padding-left: 10px;
+
+@media screen and (max-width: 768px){
+    .hero {
+        justify-content: center;
+    }
+    .project {
+        flex:0 0 100%;
+        flex-basis: 100%;
+    }
 }
