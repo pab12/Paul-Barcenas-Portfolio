@@ -13,6 +13,7 @@ header {
 header h1 a {
     padding: 10px 15px;
     text-align:right;
+    text-decoration: none;
 }
 header nav {
     margin: 7px 0;
@@ -28,6 +29,9 @@ header nav ul li a {
     padding: 10px 50px;
 }
 /*header style ends*/
+h2 {
+    text-align: right;
+}
 
 .hero {
 
@@ -42,7 +46,7 @@ header nav ul li a {
 .page-section {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
 
 }
@@ -56,7 +60,7 @@ header nav ul li a {
     padding-right: 20px;
 }
 .page-section> div {
-    flex:0 0 75%;
+    flex:0 0 71%;
 }
 /*about me section*/
 .about-me {
@@ -80,18 +84,18 @@ header nav ul li a {
     padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     
 }
 .project {
     display:flex;
     align-items:flex-end;
-    flex-basis:calc(50% - 1em);
+    flex-basis:calc(49% - 1em);
     border: 5px solid blue;
     min-height: 100px;
     max-height: 100px;
     background-size: 100%;
-    margin: 20px;
+    margin: 10px;
     /* position:relative; */
 }
 .run-buddy {
@@ -120,6 +124,15 @@ header nav ul li a {
 }
 
 .horiseon {
+    background-image: url("../images/Horiseon.png");
+}
+.place-holder {
+    background-image: url("../images/run-buddy.png");
+}
+.place-holder2 {
+    background-image: url("../images/run-buddy.png");
+}
+.place-holder3 {
     background-image: url("../images/Horiseon.png");
 }
 
