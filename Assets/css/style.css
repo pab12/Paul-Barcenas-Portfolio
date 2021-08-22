@@ -17,12 +17,13 @@ header h1 a {
 header nav {
     margin: 7px 0;
 }
-header nav ul {
+header nav ul, .contact-me footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
     list-style: none;
 }
+
 header nav ul li a {
     padding: 10px 50px;
 }
@@ -114,9 +115,17 @@ header nav ul li a {
 .contact-me {
     padding-bottom:10px;
 }
+.contact-me footer ul a {
+    padding: 10px;
+}
 
-.run {
+.horiseon {
     background-image: url("../images/Horiseon.png");
+}
+
+
+footer {
+    flex: 0 0 75%;
 }
 
 @media screen and (max-width: 900px) {
@@ -142,6 +151,10 @@ header nav ul li a {
     }
     .project {
         flex:0 0 100%;
+        flex-basis: 100%;
+    }
+    footer {
+        flex: 0 0 100%;
         flex-basis: 100%;
     }
 }
