@@ -8,7 +8,7 @@ To showcase my projects in a portfolio where potential employers can find how to
 * CSS
 
 ## Screen Shot
-![Paul Barcenas Portfolio](Assets\images\portfolio-site.png)
+![Paul Barcenas Portfolio](Assets/images/portfolio-site.png)
 ## Websites
 https://pab12.github.io/Paul-Barcenas-Portfolio/
 
