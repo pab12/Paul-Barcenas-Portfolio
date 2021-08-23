@@ -9,12 +9,15 @@ header {
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
+    background-color: black;
 }
 header h1 a {
     padding: 10px 15px;
     text-align:right;
     text-decoration: none;
+    background-color: lightblue;
 }
+
 header nav {
     margin: 7px 0;
 }
@@ -27,6 +30,7 @@ header nav ul, .contact-me footer ul {
 
 header nav ul li a {
     padding: 10px 50px;
+    color: lightblue;
 }
 /*header style ends*/
 h2 {
@@ -39,9 +43,20 @@ h2 {
     flex-wrap: wrap;
     height: 500px;
     overflow: hidden;
+    position: relative;
+}
+.avatar {
+    position:relative;
+    bottom: 200px;
+    left:65px;
+}
 
-   
-    
+img {
+    width: -webkit-fill-available;
+    height: inherit;
+}
+.avatar img {
+    width: 20%;
 }
 .page-section {
     display:flex;
