@@ -111,8 +111,13 @@ img {
     max-height: 100px;
     background-size: 100%;
     margin: 10px;
+    opacity: 0.77;
     /* position:relative; */
 }
+.project:hover {
+    color: dodgerblue;
+    opacity: 1;
+  }
 
 
 .work-text {
