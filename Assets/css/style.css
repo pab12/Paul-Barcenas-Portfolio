@@ -98,11 +98,7 @@ h2 {
     margin: 10px;
     /* position:relative; */
 }
-.run-buddy {
-    min-height: 200px;
-    flex-basis: 100%;
-    background-image: url("../images/run-buddy.png");
-}
+
 
 .work-text {
     bottom: 100px;
@@ -122,9 +118,17 @@ h2 {
 .contact-me footer ul a {
     padding: 10px;
 }
-
+a {
+    flex:1;
+}
+.run-buddy  {
+    min-height: 200px;
+    flex-basis: 100%;
+    background-image: url("../images/run-buddy.png");
+}
 .horiseon {
     background-image: url("../images/Horiseon.png");
+    
 }
 .place-holder {
     background-image: url("../images/run-buddy.png");
